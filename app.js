@@ -164,12 +164,16 @@ const postSchema = {
               
 
 
-          let port = process.env.PORT;
-          if (port == null || port == "") {
-            port = 3000;
-          }
-          app.listen(port);
+//           let port = process.env.PORT;
+//           if (port == null || port == "") {
+//             port = 3000;
+//           }
+//           app.listen(port);
 
-  app.listen(port, function() {
-    console.log("Server started");
-  })
+//   app.listen(port, function() {
+//     console.log("Server started");
+//   })
+let port = (process.env.PORT || '3000');
+          app.listen(port, process.env.IP, function () {
+             console.log(whatever)
+          })
