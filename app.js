@@ -28,12 +28,12 @@ const postSchema = {
   
   const Post = mongoose.model("Post", postSchema);
 
-  app.get("/", function(req,res){
+  app.get("/home", function(req,res){
          
     res.render("home")
      })
 
-     app.post("/", function(req, res){
+     app.post("/home", function(req, res){
   
         const post = new Post ({
             Name: req.body.postName,
