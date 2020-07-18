@@ -159,7 +159,7 @@ const postSchema = {
                
           app.get("/covid", function(req,res){
             res.render("covid")
-            // res.redirect("http://127.0.0.1:8887/covid.html")
+            res.redirect("http://127.0.0.1:8887/covid.html")
           })        
               
 
