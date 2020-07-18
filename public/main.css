@@ -1,0 +1,61 @@
+.headingmain{
+    margin-left: 38%;
+    margin-top: 4rem;
+    font-size: 5rem;
+}
+ .bt1{
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+    margin-left: 43%;
+    width: 12rem;
+}
+.bt2{
+    margin-top: -1rem;
+    margin-bottom: 4rem;
+    margin-left: 43%;
+    width: 12rem;
+}
+.bt3{
+    margin-top: -1rem;
+    margin-bottom: 4rem;
+    margin-left: 43%;
+    width: 12rem;
+}
+.bt4{
+    margin-top: -1rem;
+    margin-bottom: 4rem;
+    margin-left: 43%;
+    width: 12rem;
+} 
+
+@media (min-width: 320px) and (max-width: 768px){
+    .headingmain{
+        margin-left: 24%;
+        margin-top: 4rem;
+        font-size: 337%;
+    }
+    .bt1{
+        margin-top: 3rem;
+        margin-bottom: 4rem;
+        margin-left: 24%;
+        width: 12rem;
+    }
+    .bt2{
+        margin-top: -1rem;
+        margin-bottom: 4rem;
+        margin-left: 24%;
+        width: 12rem;
+    }
+    .bt3{
+        margin-top: -1rem;
+        margin-bottom: 4rem;
+        margin-left: 24%;
+        width: 12rem;
+    }
+    .bt4{
+        margin-top: -1rem;
+        margin-bottom: 4rem;
+        margin-left: 24%;
+        width: 12rem;
+    } 
+}

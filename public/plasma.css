@@ -1,0 +1,37 @@
+.bt1{
+    margin-left: 33%;
+    margin-top: 5%;
+    font-size: 2rem;
+}
+.bt2{
+    margin-top: -5rem;
+    margin-left: 51%;
+    font-size: 2rem;
+}
+.lab{
+    margin-left: 35%;
+    margin-top: 3rem;
+    font-size: 5rem;
+    font-weight: bold;
+}
+@media (min-width: 320px) and (max-width: 768px){
+
+    .lab {
+        /* border: 1px solid; */
+        margin-left: 4rem;
+        margin-top: 12rem;
+        margin-right: -6rem;
+        font-weight: bold;
+        font-size: 4rem;
+    }
+    .bt1 {
+        margin-left: 3rem;
+        margin-top: 5rem;
+        font-size: 2rem;
+    }
+    .bt2 {
+        margin-top: -5rem;
+        margin-left: 15rem;
+        font-size: 2rem;
+    }
+}

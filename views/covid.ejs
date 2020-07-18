@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="covid.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+</head>
+<body style="background-color: #f0ece3;">
+
+
+    <h1 class="heading1">Coronavirus Web Screening</h1>
+    
+    <div class="form" id="bt">
+    
+        <div class="card" id="form">
+            <div class="card-body" style="text-align: left; ">
+            <h4 class="card-title" style="text-align: center;">This is not a substitute for medical advice, the purpose of this screening is only to guide you to the right medical care. </h4>
+              <p class="card-text"> <strong>COVID-19 or more commonly called Corona virus Disease is a global pandemic that's continuing to spread rapidly. I can help you find your potential risk factors, by understanding your symptomatic factors.</strong> <br>
+               <strong>Note:-</strong>Use 1.Asymptomatic, 2.Mild, 3.Moderate, 4.Severe</P><br>
+               <label for=""><strong>Q. Does the patient have fever?</strong> </label><br> 
+                <input id="n4" type="number" placeholder="" name="postBg" size="35"><br>
+                <label for=""><strong>Q. Does the patient have dry cough?</strong> </label><br>
+                <input id="n5"  type="number" placeholder="" name="postEmail" size="35"><br>
+                <label for=""><strong>Q. Does the patient experience tiredness?</strong> </label><br>  
+                <input id="n6" type="number" placeholder="" name="postPhone" size="35"><br>
+                <label  for=""><strong>Q. Does the patient suffer from aches and pains?</strong> </label><br>  
+                <input id="n7" type="number" placeholder="" name="postAd" size="35"><br><br>
+               
+                <label for=""><strong>Q. Does the patient have a sour throat?</strong> </label><br>  
+                <input id="n8" type="number" placeholder="" name="postAd" size="35"><br><br>
+                <label for=""><strong>Q. Does the patient have Diarrhoea?</strong> </label><br>  
+                <input id="n9" type="number" placeholder="" name="postAd" size="35"><br><br>
+                <label for=""><strong>Q. Does the patient have Conjunctivities?</strong> </label><br>  
+                <input id="n10" type="number" placeholder="" name="postAd" size="35"><br><br>
+                <label  for=""><strong>Q. Does the patient have headache?</strong> </label><br>  
+                <input id="n11" type="number" placeholder="" name="postAd" size="35"><br><br>
+                <label for=""><strong>Q. Does the patience suffer from loss of taste and smell?</strong> </label><br>  
+                <input id="n12" type="number" placeholder="" name="postAd" size="35"><br><br>
+                <label for=""><strong>Q. Are there rashes on skin or discolouration of fingers or toes of the patient?</strong> </label><br>  
+                <input id="n13" type="number" placeholder="" name="postAd" size="35"><br><br>
+                <label for=""><strong>Q. Does the patient experience difficulty in breathing or has shortness of breath?</strong> </label><br>  
+                <input id="n14" type="number" placeholder="" name="postAd" size="35"><br><br>
+                <label for=""><strong>Q. Does the patient have chest pain or pressure?</strong> </label><br>  
+                <input id="n15" type="number" placeholder="" name="postAd" size="35"><br><br>
+                <label for=""><strong>Q. Is there a loss of speech or movement of the patient?</strong> </label><br>  
+                <input id="n16" type="number" placeholder="" name="postAd" size="35"><br><br>
+                <label for=""> <strong>Q. Enter the age of the patient:</strong>  </label><br>
+                <input id="n1"  type="Number" placeholder="" name="postName" size="35"><br>
+                <label for=""> <strong>Q. Enter gender of patient:<br>
+                Use 1.Male,2.Female,3.Other</strong>  </label><br> 
+                <input id="n2" type="number" placeholder=" " name="postSex" size="35"><br>
+                <label  for=""><strong>Q. Enter body temperature of patient:</strong> </label><br> 
+                <input id="n3" type="number" placeholder="Temperature 97-105 " name="postAge" size="60"><br>
+                <label for=""><strong>Q. What kind of smoker is the patient?<br>1.Non smoker, 2.Ex smoker, 3.Social smoker, 4.Active smoker</strong> </label><br>  
+                <input id="n17" type="number" placeholder="" name="postAd" size="35"><br><br>
+                <button type="submit" id="sub" onclick="run()" class="btn btn-primary" name="button">Submit</button>
+                    
+            </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+    <script lang="js">
+        async function run(){
+            console.log("Model Is Training Please Wait")
+            const csvUrl = 'WebScreeningData.csv';
+            const trainingData = tf.data.csv(csvUrl, {
+                columnConfigs: {
+                    RiskOfCovidInfection: {
+                        isLabel: true
+                    }
+                }
+            });
+   
+            const numOfFeatures = (await trainingData.columnNames()).length - 1;
+            const numOfSamples = 1000;
+            const convertedData =
+                  trainingData.map(({xs, ys}) => {
+                      const labels = [
+                            ys.RiskOfCovidInfection == "Low risk" ? 1 : 0,
+                            ys.RiskOfCovidInfection == "Moderate risk" ? 1 : 0,
+                            ys.RiskOfCovidInfection == "High risk" ? 1 : 0
+                            //ys.RiskOfCovidInfection == "High" ? 1 : 0
+                      ] 
+                      return{ xs: Object.values(xs), ys: Object.values(labels)};
+                  }).batch(10);
+            
+            const model = tf.sequential();
+            model.add(tf.layers.dense({inputShape: [numOfFeatures], activation: "sigmoid", units: 5}))
+            model.add(tf.layers.dense({activation: "softmax", units: 3 }));
+            
+            model.compile({loss: "categoricalCrossentropy", optimizer: tf.train.adam(0.06)});
+            
+            await model.fitDataset(convertedData, 
+                             {epochs:20,
+                              callbacks:{
+                                  onEpochEnd: async(epoch, logs) =>{
+                                      console.log("Epoch: " + epoch + " Loss: " + logs.loss);
+                                  }
+                              }});   
+
+           var n1  = parseInt( document.getElementById("n1").value);
+           var n2  = parseInt( document.getElementById("n2").value);
+           var n3  = parseInt( document.getElementById("n3").value);
+           var n4  = parseInt( document.getElementById("n4").value);
+           var n5  = parseInt( document.getElementById("n5").value);
+           var n6  = parseInt( document.getElementById("n6").value);
+           var n7  = parseInt( document.getElementById("n7").value);
+           var n8  = parseInt( document.getElementById("n8").value);
+           var n9  = parseInt( document.getElementById("n9").value);
+           var n10 = parseInt( document.getElementById("n10").value);
+           var n11 = parseInt( document.getElementById("n11").value);
+           var n12 = parseInt( document.getElementById("n12").value);
+           var n13 = parseInt( document.getElementById("n13").value);
+           var n14 = parseInt( document.getElementById("n14").value);
+           var n15 = parseInt( document.getElementById("n15").value);
+           var n16 = parseInt( document.getElementById("n16").value);
+           var n17 = parseInt( document.getElementById("n17").value);
+
+            console.log([n1,n2,n3,n4,n5,n6,n7,n8,n9,n10,n11,n12,n13,n14,n15,n16,n17])
+    
+            // Test Cases:
+            
+            // Setosa
+            const testVal = tf.tensor2d([n1,n2,n3,n4,n5,n6,n7,n8,n9,n10,n11,n12,n13,n14,n15,n16,n17], [1, 17]);
+                              
+            // Versicolor
+            // const testVal = tf.tensor2d([6.4, 3.2, 4.5, 1.5], [1, 4]);
+            
+            // Virginica
+            // const testVal = tf.tensor2d([5.8,2.7,5.1,1.9], [1, 4]);
+            
+            const prediction = model.predict(testVal);
+            const pIndex = tf.argMax(prediction, axis=1).dataSync();
+            
+            const classNames = ["Low risk", "Moderate risk", "High risk"];
+            
+            // alert(prediction)
+            alert(classNames[pIndex])
+            
+        }
+    </script>
+<body>
+</body>
+</html>

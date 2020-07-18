@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+</head>
+<body style="background-color: #f0ece3;">
+    <div class="home">
+    <h1 class="heading-home">Nearby COVID-19 Hospitals</h1>
+    <button type="button" class="btn btn-secondary fas fa-location-arrow" onclick="getLocation(); myFunction();"> Location</button><br>
+
+      <!-- <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Select Your City
+        </button> -->
+        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+          <button class="dropdown-item" onclick="myCity1(),myFunction()" type="button">Mumbai</button>
+          <button class="dropdown-item" onclick="myCity2(),myFunction()" type="button">Navi Mumbai</button>
+          <button class="dropdown-item" onclick="myCity3(),myFunction()" type="button">Thane</button>
+          <button class="dropdown-item" onclick="myCity4(),myFunction()" type="button">Pune</button>
+        </div>
+      </div>
+          
+    <!-- <input type="text" placeholder="Enter Your City Name" name= "enter">
+    <button type="submit">Search</button> -->
+    <div id="output"></div>
+    <div id="DivContent"></div>
+    <form action="/" method="post">
+    <div class="form" id="bt">
+    
+        <div class="card" id="form">
+            <div class="card-body" style="text-align: left; ">
+            <h4 class="card-title" style="text-align: center;">Any Covid 19 center you know that is not on our site? </h4>
+              <p class="card-text"> <strong>Help us to improve your experience by filling out the form below:</strong> <br>
+                <label for=""> <strong>Name :</strong>  </label><br>
+                <input  type="text" placeholder="Enter Hospital Name " name="postName" size="35"><br>
+                <label for=""> <strong>Address :</strong>  </label><br> 
+                <input type="text" placeholder="Enter Address Name " name="postAdress" size="35"><br>
+                <label for=""> <strong>Contact Us :</strong>  </label><br>
+                <label for="">Area code: </label><br> 
+                <input type="text" placeholder="Enter Area Code " name="postArea" size="35"><br>
+                <label for="">Tel: </label><br>
+                <input type="text" placeholder="Enter Telephone Number " name="postTel" size="35"><br>
+                <label for="">Fax: </label><br>  
+                <input type="text" placeholder="Enter Fax " name="postFax" size="35"><br>
+                <label for="">Phone: </label><br>  
+                <input type="text" placeholder="Enter Phone Number " name="postPhone" size="35"><br>
+                <label for="">Emergency: </label><br>  
+                <input type="text" placeholder="Enter Emergency Number(If Any) " name="postEmergency" size="35"><br>
+                <label for=""> <strong>Category:</strong>  </label><br>  
+                <input type="text" placeholder="Enter it is Hospital/Clinic " name="postCategory" size="35"><br>
+                <label for="">  <strong>Official website link</strong> </label><br>  
+                <input type="text" placeholder="Enter Websile if any " name="postweb" size="35"><br><br>
+                  
+                <button type="submit" onclick="myClick()" id="sub"  class="btn btn-primary" name="button">Submit</button>
+                    
+            </p>
+            </div>
+        </div>
+    </div>
+</form>
+    <script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>    
+  <script src="index.js"></script>
+</body>
+</html>
